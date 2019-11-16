@@ -44,14 +44,26 @@ var employees = [
 // Do not edit the code above.
 
 /*
-  Create a function called 'employeeUpdater' that takes no parameters. employeeUpdater will loop over the array above and perform the following:
+  Create a function called 'employeeUpdater' that takes no parameters. employeeUpdater will loop over 
+  the array above and perform the following:
     1. If employee's first name is Theo, remove that employee because he just got fired.
     2. If the employee's first name is Lorie, change her department to 'HR'.
     3. Return the updated employee array.
 */
 
 //Code Here
-
+function employeeUpdater(){
+  for (let i=0; i<employees.length; i++){
+  if (employees[i].firstName === "Theo"){
+    console.log(employees[i].firstName);
+     employees.splice(i, 1); 
+  } else if (employees[i].firstName === "Lorie"){
+      employees[i].department;
+      employees[i].department = 'HR';
+    console.log(employees[i].department);
+  }
+  } return employees;
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -97,10 +109,23 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
 
+var grumpyActivity = cat.catFriends[0].activities[1]
+var fluffy2ndFriend = cat.catFriends[1].name
 
+//object.assign({}, obj1)
+
+/*const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+
+console.log(target);
+// expected output: Object { a: 1, b: 4, c: 5 }
+
+console.log(returnedTarget);
+// expected output: Object { a: 1, b: 4, c: 5 }
+*/
 
 ////////// PROBLEM 4 //////////
 

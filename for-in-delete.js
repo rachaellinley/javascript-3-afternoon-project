@@ -36,14 +36,16 @@
 ////////// PROBLEM 1 //////////
 
 /*
-  Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
+  Inside the function showValues, write a for in loop that concatenates each of the 
+  property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
+function showValues(values) {
+  let string = "";
+  for(var key in values) {
+    string += values[key];
+}  return string;
 }
-
-
 
 ////////// PROBLEM 2 //////////
 
@@ -55,6 +57,13 @@ function showValues( obj ) {
 
 //Code Here
 
+function greaterThan10(object){
+  for(let key in object){
+    if (object[key] > 10){
+      (object[key]) *= 0;
+    } 
+  } return object;
+}
 
 
 ////////// PROBLEM 3 //////////
